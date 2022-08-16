@@ -1,5 +1,6 @@
 import Navbar from './components/Navbar';
 import GetTicket from './components/GetTicket';
+import ScanTicket from './components/ScanTicket' ;
 import { BrowserRouter as Router , Route , Switch  } from 'react-router-dom' ;
 
 function App() {
@@ -12,6 +13,9 @@ function App() {
           {/* <Route exact path="/"></Route> */}
           <Route path="/get">
              <GetTicket/>    
+          </Route>
+          <Route path="/scan">
+             <ScanTicket/>    
           </Route>
         </Switch>
            
